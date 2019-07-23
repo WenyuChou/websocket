@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: service-websocket
+feign:
+  hystrix:
+    enabled: true
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.10.148:10035/eureka/
+  instance:
+      #告诉服务端，如果我20s之内没有给你发心跳，就代表我“死”了，将我踢出掉。
+      lease-expiration-duration-in-seconds: 20
+      #每间隔10s，向服务端发送一次心跳，证明自己依然”存活“
+      leaseRenewalIntervalInSeconds: 10
+      prefer-ip-address: true
