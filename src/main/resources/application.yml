@@ -6,6 +6,8 @@ feign:
     enabled: true
 eureka:
   client:
+    register-with-eureka: false
+    fetch-registry: false
     serviceUrl:
       defaultZone: http://192.168.10.148:10035/eureka/
   instance:

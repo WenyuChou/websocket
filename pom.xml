@@ -46,6 +46,12 @@
         <artifactId>fastjson</artifactId>
         <version>1.2.58</version>
         </dependency>
+        <!--tcp服务-->
+        <dependency>
+            <groupId>io.netty</groupId>
+            <artifactId>netty-all</artifactId>
+            <version>5.0.0.Alpha1</version>
+        </dependency>
         <!--springCloud Client-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
